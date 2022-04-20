@@ -1,0 +1,18 @@
+name: "<Testing> 1 2 3"
+description: |
+  <Canary> 4 5 6
+type: "rule"
+severity: "medium"
+authors:
+  - twitter: "<img src=x onerror=alert(1)>"
+source: |
+  type.inbound and
+  any(attachments,
+      .file_extension in~ ('html', 'htm')
+        and .size <= 40960
+         and any(beta.binexplode(.),
+               any(.scan.javascript.identifiers, . == "location") and length(.scan.javascript.identifiers) < 100)
+  )
+tags:
+  - "Suspicious attachment"
+  - "XSS? <test>"
