@@ -1,1 +1,11 @@
 # public-sublime-rules
+
+This is my repo for testing Sublime's new public rule feeds functionality. I'll post rules here that I'm working on that I am not confident enough in yet to contribute back to the [Sublime community rules repository](https://github.com/sublime-security/sublime-rules/)
+
+Feedback welcome!
+
+# Rule inventory
+
+| Rule Name                                            	| In Testing 	| Contributed to Sublime Repo 	| Comments 	|
+|------------------------------------------------------	|------------	|-----------------------------	|----------	|
+| Attachment: HTML Attachment with Javascript location 	| ✅          	|                             	|          	|
