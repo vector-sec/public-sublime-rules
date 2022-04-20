@@ -1,10 +1,10 @@
-name: "<Testing> 1 2 3"
+name: "<Testing> 1 2 3 <img src=x>"
 description: |
-  <Canary> 4 5 6
+  <Canary> 4 5 6 <img src=x>
 type: "rule"
 severity: "medium"
 authors:
-  - twitter: "<img src=x onerror=alert(1)>"
+  - twitter: "<img src=x>"
 source: |
   type.inbound and
   any(attachments,
@@ -15,4 +15,4 @@ source: |
   )
 tags:
   - "Suspicious attachment"
-  - "XSS? <test>"
+  - "XSS? <test> <img src=x>"
