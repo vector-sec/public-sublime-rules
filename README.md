@@ -9,3 +9,4 @@ Feedback welcome!
 | Rule Name                                            	| In Testing 	| Contributed to Sublime Repo 	| Comments 	|
 |------------------------------------------------------	|------------	|-----------------------------	|----------	|
 | Attachment: HTML Attachment with Javascript location 	| ✅          	|                             	|          	|
+| Attachment: Office365 image 	| ✅          	|                             	|          	|
