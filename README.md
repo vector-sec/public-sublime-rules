@@ -11,3 +11,4 @@ Feedback welcome!
 | Attachment: HTML Attachment with Javascript location 	| ✅          	|                             	|          	|
 | Attachment: Office365 image 	| ✅          	|                             	|          	|
 | Attachment: Office Document with VSTO Add-in 	| ✅          	|                             	|          	|
+| Content: Replies and forwards with possible Qakbot link | ✅          	|                             	|          	|
