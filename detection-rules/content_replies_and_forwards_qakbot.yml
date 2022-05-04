@@ -1,0 +1,20 @@
+name: "Content: Replies and forwards with possible Qakbot link"
+description: |
+  Looks for forward or reply emails that lack the appropriate headers for a forward or reply with a low reputation link that may be related to a Qakbot campaign
+type: "rule"
+references:
+  - "https://news.sophos.com/en-us/2022/03/10/qakbot-injects-itself-into-the-middle-of-your-conversations/"
+severity: "medium"
+authors:
+  - twitter: "vector_sec"
+source: |
+  type.inbound 
+  and (length(attachments) == 0 and length(body.links) > 0)
+  and length(body.plain.raw) < 500
+  and ilike(subject.subject, "re:*","fwd:*","fw:*")
+  and not (
+     any(headers.hops, any(.fields, ilike(.name, "References","In-Reply-To")))
+  )
+  and any(body.links, regex_match(.href_url.url, 'http[s]?:\/\/[a-z0-9-]+[\.a-z]+\/[a-z]+\/[a-z-]*') and .href_url.domain.root_domain not in $tranco_1m)
+tags:
+  - "Suspicious link"
