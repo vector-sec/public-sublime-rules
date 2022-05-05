@@ -8,7 +8,7 @@ Feedback welcome!
 
 | Rule Name                                            	| In Testing 	| Contributed to Sublime Repo 	| Comments 	|
 |------------------------------------------------------	|------------	|-----------------------------	|----------	|
-| Attachment: HTML Attachment with Javascript location 	| ✅          	|                             	|          	|
-| Attachment: Office365 image 	| ✅          	|                             	|          	|
-| Attachment: Office Document with VSTO Add-in 	| ✅          	|                             	|          	|
+| Attachment: HTML Attachment with Javascript location 	|           	| ✅                            	|          	|
+| Attachment: Office365 image 	|           	| ✅                            	|          	|
+| Attachment: Office Document with VSTO Add-in 	|           	| ✅                            	|          	|
 | Content: Replies and forwards with possible Qakbot link | ✅          	|                             	|          	|
