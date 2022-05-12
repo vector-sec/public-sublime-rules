@@ -12,3 +12,4 @@ Feedback welcome!
 | Attachment: Office365 image 	|           	| ✅                            	|          	|
 | Attachment: Office Document with VSTO Add-in 	|           	| ✅                            	|          	|
 | Content: Replies and forwards with possible Qakbot link | ✅          	|                             	|          	|
+| Link: URL with username bypass | ✅          	|                             	|          	|
