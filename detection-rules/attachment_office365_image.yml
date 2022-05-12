@@ -8,7 +8,7 @@ authors:
 source: |
   type.inbound
   and length(body.html.inner_text) < 100
-  and any(attachments, .file_extension in~ ('png','jpg','jpeg')
+  and any(attachments, .file_extension in~ ('png','jpg','jpeg') and .size < 2000000
       and any(beta.binexplode(.),
           (
               (
@@ -23,6 +23,7 @@ source: |
           )
       )
   )
+
 
 tags:
   - "Suspicious attachment"
