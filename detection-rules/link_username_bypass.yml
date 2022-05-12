@@ -1,0 +1,12 @@
+name: "Link: URL with username bypass"
+description: |
+  Looks for links that are using the characters $%^&*;( to bypass link-based spam/phishing filtering
+type: "rule"
+severity: "medium"
+authors:
+  - twitter: "vector_sec"
+source: |
+  type.inbound and 
+  any(body.links, iregex_search(.href_url.url,'[$%^&;*(]{2,}@'))
+tags:
+  - "Suspicious link"
