@@ -22,8 +22,7 @@ source: |
               )
           )
       )
+      and not any(beta.binexplode(.), any(.scan.exiftool.fields, .key == "DeviceManufacturer"))
   )
-
-
 tags:
   - "Suspicious attachment"
