@@ -13,4 +13,4 @@ Feedback welcome!
 | Attachment: Office Document with VSTO Add-in 	|           	| ✅                            	|          	|
 | Content: Replies and forwards with possible Qakbot link | ✅          	|                             	|          	|
 | Link: URL with username bypass | ✅          	|                             	|          	|
-| Open redirect: Snapchat| ✅          	|                             	|          	|
+| Open redirect: Snapchat|           	|   ✅                          	|          	|
