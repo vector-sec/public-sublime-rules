@@ -1,0 +1,20 @@
+source: |-
+  type.inbound
+  and any(attachments,
+          regex.icontains(.file_name, '\x{2800}')
+          or (
+            .file_extension in~ $file_extensions_common_archives
+            and any(file.explode(.), regex.icontains(.file_name, '\x{2800}'))
+          )
+  )
+type: rule
+name: 'Attachment: Filename Containing Unicode Braille Pattern Blank Character'
+authors:
+  - twitter: "vector_sec"
+description: Recursively identifies attachments that attempt to conceal their true
+  file extension by using Braille Pattern Blank characters
+references:
+- https://www.bleepingcomputer.com/news/security/windows-vulnerability-abused-braille-spaces-in-zero-day-attacks/
+tags:
+  - "Suspicious attachment"
+severity: high
