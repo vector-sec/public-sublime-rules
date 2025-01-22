@@ -8,6 +8,7 @@ Feedback welcome!
 
 | Rule Name                                            	| In Testing 	| Contributed to Sublime Repo 	| Comments 	|
 |------------------------------------------------------	|------------	|-----------------------------	|----------	|
+| Attachment: Filename Containing Unicode Braille Pattern Blank Character | ✅ | | |
 | Attachment: HTML Attachment with Javascript location 	|           	| ✅                            	|          	|
 | Attachment: Office365 image 	|           	| ✅                            	|          	|
 | Attachment: Office Document with VSTO Add-in 	|           	| ✅                            	|          	|
